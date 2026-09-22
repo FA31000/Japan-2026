@@ -33,9 +33,11 @@ img { display: block; max-width: 100%; }
 .menu a { color: var(--white); text-decoration: none; font-weight: 600; font-size: .95rem; padding: .4rem .8rem; border-radius: 6px; }
 .menu a:hover { color: var(--gold); }
 .menu a.active { background: var(--amber); color: var(--white); }
-.daynav { background: var(--pale); padding: .5rem 1rem; gap: .25rem; }
+.daynav { background: var(--pale); padding: .6rem 1rem; gap: .4rem; }
+.daynav b { color: var(--amber); margin-right: .2rem; }
+.daynav a.active b { color: var(--gold); }
 .daynav[hidden], .panel[hidden] { display: none; }
-.daynav a { color: var(--green); text-decoration: none; font-weight: 700; padding: .3rem .6rem; border-radius: 6px; background: var(--white); }
+.daynav a { color: var(--green); text-decoration: none; font-weight: 600; font-size: .9rem; padding: .3rem .6rem; border-radius: 6px; background: var(--white); }
 .daynav a.active { background: var(--green); color: var(--white); }
 
 /* Hero (inside Overview) */
