@@ -59,6 +59,7 @@ main > section { max-width: 900px; margin: 0 auto; padding: 4rem 1rem; scroll-ma
 .overview td { padding: .6rem; border-bottom: 1px solid #dde3de; vertical-align: top; }
 .overview td:first-child { white-space: nowrap; font-weight: 700; }
 .overview td:last-child { color: var(--muted); }
+.overview .tr { white-space: nowrap; color: var(--amber); font-weight: 600; }
 
 /* Day pages */
 .day { background: var(--pale); scroll-margin-top: 3rem; }
