@@ -9,26 +9,31 @@
 </head>
 <body>
 
-<header class="hero">
-  <img src="img/hero.jpg" alt="Kamikochi valley">
-  <div class="hero-text">
-    <p class="kicker">JAPAN 2026</p>
-    <h1>Nine days in the<br>Northern Alps</h1>
-    <p class="sub">22 - 31 October &nbsp;/&nbsp; Kiso Valley &nbsp;/&nbsp; Kamikochi &nbsp;/&nbsp; Okuhida Onsen</p>
-  </div>
+<header class="top">
+  <p class="title">Japan 2026 &middot; Northern Alps</p>
+  <nav class="menu">
+    <a href="#shape">Overview</a>
+    <a href="#days">Day by day</a>
+    <a href="#book">Book</a>
+    <a href="#licences">Licences</a>
+    <a href="#before">Before you go</a>
+  </nav>
+  <nav class="daynav" hidden>
+    <a href="#days">All</a><a href="#day1">1</a><a href="#day2">2</a><a href="#day3">3</a><a href="#day4">4</a><a href="#day5">5</a><a href="#day6">6</a><a href="#day7">7</a><a href="#day8">8</a><a href="#day9">9</a>
+  </nav>
 </header>
-
-<nav class="menu">
-  <a href="#shape">Overview</a>
-  <a href="#days">Day by day</a>
-  <a href="#book">Book</a>
-  <a href="#licences">Licences</a>
-  <a href="#before">Before you go</a>
-</nav>
 
 <main>
 
-<section id="shape">
+<section id="shape" class="panel">
+  <div class="hero">
+    <img src="img/hero.jpg" alt="Kamikochi valley">
+    <div class="hero-text">
+      <p class="kicker">JAPAN 2026</p>
+      <h1>Nine days in the<br>Northern Alps</h1>
+      <p class="sub">22 - 31 October &nbsp;/&nbsp; Kiso Valley &nbsp;/&nbsp; Kamikochi &nbsp;/&nbsp; Okuhida Onsen</p>
+    </div>
+  </div>
   <h2>The shape of the trip</h2>
   <p class="lead">One car, three mountain bases, and almost no time in transit</p>
   <div class="stats">
@@ -43,7 +48,7 @@
   <p class="credit">Base map (c) OpenStreetMap contributors</p>
 </section>
 
-<section id="days">
+<section id="days" class="panel">
   <h2>Day by day</h2>
   <p class="lead">The whole trip on one page. Tap a day to see it in full.</p>
   <table class="overview">
@@ -63,7 +68,7 @@
   </table>
 </section>
 
-<article class="day" id="day1">
+<article class="day panel" id="day1">
   <img src="img/day1.jpg" alt="A street in Yanaka, Tokyo">
   <div class="day-body">
     <p class="kicker">DAY 1 &middot; FRIDAY 23 OCTOBER</p>
@@ -81,7 +86,7 @@
   </div>
 </article>
 
-<article class="day" id="day2">
+<article class="day panel" id="day2">
   <img src="img/day2.jpg" alt="Tsumago">
   <div class="day-body">
     <p class="kicker">DAY 2 &middot; SATURDAY 24 OCTOBER</p>
@@ -98,7 +103,7 @@
   </div>
 </article>
 
-<article class="day" id="day3">
+<article class="day panel" id="day3">
   <img src="img/day3.jpg" alt="The Nakasendo trail">
   <div class="day-body">
     <p class="kicker">DAY 3 &middot; SUNDAY 25 OCTOBER</p>
@@ -116,7 +121,7 @@
   </div>
 </article>
 
-<article class="day" id="day4">
+<article class="day panel" id="day4">
   <img src="img/day4.jpg" alt="Narai-juku">
   <div class="day-body">
     <p class="kicker">DAY 4 &middot; MONDAY 26 OCTOBER</p>
@@ -133,7 +138,7 @@
   </div>
 </article>
 
-<article class="day" id="day5">
+<article class="day panel" id="day5">
   <img src="img/day5.jpg" alt="Kamikochi">
   <div class="day-body">
     <p class="kicker">DAY 5 &middot; TUESDAY 27 OCTOBER</p>
@@ -150,7 +155,7 @@
   </div>
 </article>
 
-<article class="day" id="day6">
+<article class="day panel" id="day6">
   <img src="img/day6.jpg" alt="Kamikochi in autumn colour">
   <div class="day-body">
     <p class="kicker">DAY 6 &middot; WEDNESDAY 28 OCTOBER</p>
@@ -168,7 +173,7 @@
   </div>
 </article>
 
-<article class="day" id="day7">
+<article class="day panel" id="day7">
   <img src="img/day7.jpg" alt="Shinhotaka Ropeway">
   <div class="day-body">
     <p class="kicker">DAY 7 &middot; THURSDAY 29 OCTOBER</p>
@@ -185,7 +190,7 @@
   </div>
 </article>
 
-<article class="day" id="day8">
+<article class="day panel" id="day8">
   <img src="img/day8.jpg" alt="A shop in Kagurazaka, Tokyo">
   <div class="day-body">
     <p class="kicker">DAY 8 &middot; FRIDAY 30 OCTOBER</p>
@@ -202,7 +207,7 @@
   </div>
 </article>
 
-<article class="day" id="day9">
+<article class="day panel" id="day9">
   <img src="img/day9.jpg" alt="Keisei Skyliner">
   <div class="day-body">
     <p class="kicker">DAY 9 &middot; SATURDAY 31 OCTOBER</p>
@@ -219,7 +224,7 @@
   </div>
 </article>
 
-<section id="book">
+<section id="book" class="panel">
   <h2>Book this week</h2>
   <p class="lead">You are seven weeks out, in peak foliage season. This is the order that matters.</p>
   <ol class="booklist">
@@ -233,7 +238,7 @@
   <p class="callout">The two Tokyo hotels and the rental car can wait a week. Nothing above can.</p>
 </section>
 
-<section id="licences">
+<section id="licences" class="panel">
   <h2>The driving licences</h2>
   <p class="lead">The one thing that can stop the trip at the rental desk</p>
   <div class="cards">
@@ -252,7 +257,7 @@
   <p>Carry the original licence together with the permit or translation at all times - the rental desk checks both, and so do the police.</p>
 </section>
 
-<section id="before">
+<section id="before" class="panel">
   <h2>Before you go</h2>
   <p class="lead">Small things that make a difference at this time of year</p>
   <div class="cards">
@@ -270,6 +275,37 @@
 <footer>
   <p>Photographs from Wikimedia Commons: Kamikochi, Tsumago, Nakasendo and Azusa images CC0; Keisei Skyliner public domain; Magome CC BY-SA 3.0; Narai-juku (Luka Peternel), Shinhotaka Ropeway and Kagurazaka CC BY-SA 4.0; Yanaka CC BY 4.0; Hirayu Onsen CC BY 2.5. Base map (c) OpenStreetMap contributors.</p>
 </footer>
+
+<script>
+var panels = document.querySelectorAll('.panel');
+var tabs = document.querySelectorAll('.menu a');
+var dayLinks = document.querySelectorAll('.daynav a');
+var daynav = document.querySelector('.daynav');
+
+function show() {
+  var id = location.hash.slice(1);
+  var panel = document.getElementById(id);
+  if (!panel || !panel.classList.contains('panel')) { id = 'shape'; panel = document.getElementById(id); }
+  var tab = /^day\d$/.test(id) ? 'days' : id;
+  panels.forEach(function (p) { p.hidden = p !== panel; });
+  tabs.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + tab); });
+  dayLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + id); });
+  daynav.hidden = tab !== 'days';
+  setTimeout(function () { window.scrollTo(0, 0); }, 0);
+}
+
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  e.preventDefault();
+  history.pushState(null, '', a.getAttribute('href'));
+  show();
+});
+window.addEventListener('popstate', show);
+window.addEventListener('hashchange', show);
+window.addEventListener('load', show);
+show();
+</script>
 
 </body>
 </html>
