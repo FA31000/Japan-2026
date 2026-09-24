@@ -143,7 +143,7 @@ footer p { max-width: 900px; margin: 0 auto; }
 .dc-grid .cal-ev { left: 4px; right: 0; }
 .dc-more { margin-top: .8rem; font-size: .82rem; }
 @media (min-width: 1400px) {
-  .day-body { position: relative; }
+  .day-body { position: relative; min-height: calc(var(--dc-h, 0px) + 4.5rem); }
   .day-cal { position: absolute; top: 1.5rem; bottom: 3rem; left: calc(100% + 1.5rem); width: 230px; margin: 0; }
   .day-cal-in { position: sticky; top: 110px; }
 }

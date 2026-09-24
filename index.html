@@ -553,6 +553,7 @@ show();
     html += '</div><p class="dc-more"><a href="#calendar">See all ten days in the Calendar</a></p></div>';
     aside.innerHTML = html;
     page.appendChild(aside);
+    page.style.setProperty('--dc-h', ((to - from) * DC_PX + 90) + 'px');
   });
 })();
 </script>
