@@ -135,3 +135,15 @@ footer p { max-width: 900px; margin: 0 auto; }
 .cal-ev b { display: block; font-weight: 700; }
 .cal-ev small { display: block; opacity: .85; font-size: .62rem; margin-top: 1px; }
 .cal-note { margin-top: 1rem; font-size: .82rem; color: var(--muted); }
+
+/* Day pages: that day's calendar column */
+.day-cal { margin-top: 2.5rem; max-width: 320px; }
+.dc-grid { position: relative; margin-left: 44px; border-left: 1px solid #dde3de; background-image: repeating-linear-gradient(to bottom, #e4e9e5 0, #e4e9e5 1px, transparent 1px, transparent 32px); }
+.dc-grid .dc-hour { position: absolute; left: -44px; width: 38px; text-align: right; transform: translateY(-50%); font-size: .68rem; color: var(--muted); }
+.dc-grid .cal-ev { left: 4px; right: 0; }
+.dc-more { margin-top: .8rem; font-size: .82rem; }
+@media (min-width: 1400px) {
+  .day-body { position: relative; }
+  .day-cal { position: absolute; top: 1.5rem; bottom: 3rem; left: calc(100% + 1.5rem); width: 230px; margin: 0; }
+  .day-cal-in { position: sticky; top: 110px; }
+}

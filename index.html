@@ -528,6 +528,32 @@ show();
     });
     grid.appendChild(body);
   });
+
+  // The same day as a single column on each day page (DAYS[0] is day1)
+  var DC_PX = 32;
+  DAYS.forEach(function (day, i) {
+    var page = document.querySelector('#day' + (i + 1) + ' .day-body');
+    if (!page) return;
+    var from = 24, to = 0;
+    day.events.forEach(function (ev) { from = Math.min(from, Math.floor(ev.start)); to = Math.max(to, Math.ceil(ev.end)); });
+    from = Math.max(0, from - 1); to = Math.min(24, to + 1);
+
+    var aside = document.createElement('aside');
+    aside.className = 'day-cal';
+    var html = '<div class="day-cal-in"><p class="kicker">THE DAY, HOUR BY HOUR</p>' +
+      '<div class="dc-grid" style="height:' + ((to - from) * DC_PX) + 'px">';
+    for (var h = from; h <= to; h++) {
+      html += '<span class="dc-hour" style="top:' + ((h - from) * DC_PX) + 'px">' + (h < 10 ? '0' : '') + h + ':00</span>';
+    }
+    day.events.forEach(function (ev) {
+      var hgt = (ev.end - ev.start) * DC_PX;
+      html += '<div class="cal-ev" style="background:' + CATS[ev.cat].color + ';top:' + ((ev.start - from) * DC_PX) + 'px;height:' + Math.max(hgt, 17) + 'px"><b>' + ev.lbl + '</b>' +
+        (hgt >= 28 ? '<small>' + fmt(ev.start) + '&ndash;' + fmt(ev.end) + '</small>' : '') + '</div>';
+    });
+    html += '</div><p class="dc-more"><a href="#calendar">See all ten days in the Calendar</a></p></div>';
+    aside.innerHTML = html;
+    page.appendChild(aside);
+  });
 })();
 </script>
 
